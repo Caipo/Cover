@@ -1,0 +1,106 @@
+
+%!TEX TS-program = xelatex
+%%%% Define Document type
+\documentclass[11pt,a4]{article}
+
+%%%% Include Packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\hypersetup{colorlinks=true,urlcolor=black}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage[inline]{enumitem}
+\usepackage{ragged2e}
+\usepackage{anyfontsize}
+
+%%%% Set Margins
+\usepackage[margin=1cm]{geometry}
+
+%%%% Set Fonts
+\setmainfont[
+BoldFont=SourceSansPro-Semibold.otf,
+ItalicFont=SourceSansPro-RegularIt.otf
+]{SourceSansPro-Regular.otf}
+
+%%%% Set Page Style
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%% Set URL Style
+\urlstyle{same}
+
+
+
+%%%% Set Indentation
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%%%% Set Secondary Color, Page Number Color, Footer Text
+\definecolor{UI_blue}{RGB}{32, 64, 151}
+\definecolor{HF_color}{RGB}{179, 179, 179}
+\rfoot{{\color{HF_color} \thepage \ of \ 1, Updated \today}}
+
+%%%% Set Heading Format
+\titleformat{\section}{
+	\color{UI_blue} \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-0.7cm} \hrulefill \vspace{-0.2cm}]
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  END OF "DO NOT TOUCH" REGION
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+
+
+
+\begin{document}
+	%%%%%%% --------------------------------------------------------------------------------------
+	%%%%%%%  HEADER
+	%%%%%%% --------------------------------------------------------------------------------------
+	\begin{center}
+		
+		\begin{minipage}[b]{0.5\textwidth}
+			\centering
+			{\Huge Coding research assistant} \\ %
+			\vspace{0.1cm}
+			%    {\color{UI_blue} \Large{Software Developer}} \\
+			
+		\end{minipage}% 
+		
+		\vspace{-0.15cm} 
+		{\color{UI_blue} \hrulefill}
+	\end{center}
+	
+	\justify
+	\setlength{\parindent}{0pt}
+	\setlength{\parskip}{12pt}
+	\vspace{0.2cm}
+	
+	Date: \today \par \vspace{-0.1cm}
+Dear Hiring Team,
+
+I am writing to express my interest in the Coding Research Assistant position at the University of British Columbia. With my experience in mathematics, machine learning, continuous optimization, and time series analysis, I am confident I would be a great fit for the role.
+
+I am a quick learner and have excellent communication skills. I am passionate about problem solving and have a great deal of experience working with Vim, SQL, Linux, Python, R, Java, and Latex. I have worked on a variety of coding projects, including a Reddit web scraper that pulled and categorized 50,000 images, an encrypted chat app made from base python library, and a terrorism analytics project based on 180,000 different attacks.
+
+I am very passionate about coding and believe I would be a great asset to the team. I would love to discuss the position further and show you how my skills and experience can help the University of British Columbia.
+
+Thank you for your time and consideration.
+
+Sincerely,
+
+Nicholas Demetrick \vspace{0.5cm} \raggedright \end{document}
