@@ -3,7 +3,7 @@ import openai
 import pdb
 
 def main():
-    openai.api_key = "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"
+    openai.api_key = ""
     company = input('Company: ')
     position = input('Position: ')
     response = openai.Completion.create(
