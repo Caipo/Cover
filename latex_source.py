@@ -1,4 +1,5 @@
-
+def return_doc(position, response):
+    document = r'''
     %!TEX TS-program = xelatex
     %%%% Define Document type
     \documentclass[11pt,a4]{article}
@@ -75,7 +76,7 @@
             
             \begin{minipage}[b]{0.5\textwidth}
                 \centering
-                {\Huge Intern} \\ %
+                {\Huge ''' + position + r'''} \\ %
                 \vspace{0.1cm}
                 %    {\color{UI_blue} \Large{Software Developer}} \\
                 
@@ -90,23 +91,5 @@
         \setlength{\parskip}{12pt}
         \vspace{0.2cm}
         
-        Date: \today \par \vspace{-0.1cm}
-Dear Hiring Manager,
-
-I am writing to express my interest in the Intern position with Google. As a recent graduate with a Bachelor's degree in pure mathematics and a strong passion for problem solving, I am confident that I have the skills and determination to excel in this role.
-
-Throughout my academic career, I have completed courses in machine learning, continuous optimization, and time series analysis, giving me a solid foundation in the field of data analysis. Additionally, I have honed my skills in Vim, SQL, Linux, Python, R, Java, and Latex through various projects and coursework. My proficiency in these languages has allowed me to develop innovative solutions to complex problems.
-
-One of my most notable projects includes a Reddit web scraper that pulled and categorized 50,000 images. This project not only showcased my technical skills but also my ability to think critically and find efficient solutions. I also created an encrypted chat app using military-grade 2048-bit RSA encryption, demonstrating my understanding of data security and my ability to work with complex algorithms.
-
-Furthermore, I have recently completed a project on terrorism analytics, utilizing data from 180,000 attacks to analyze patterns and trends in country, method, and organization. This project allowed me to apply my mathematical and statistical knowledge to real-world issues, and I am confident that I can bring this same level of analytical thinking to my work at Google.
-
-Aside from my technical skills, I am also a quick learner with excellent communication skills. I am able to effectively communicate complex ideas and work well in a team setting. Furthermore, my passion for problem-solving drives me to constantly learn and improve, making me a valuable asset to any team.
-
-As a highly motivated and driven individual, I am eager to apply my skills and knowledge at Google. I am impressed by the company's commitment to innovation and its impact on the world, and I am excited at the opportunity to contribute to its mission. I am confident that an internship at Google will provide me with invaluable experience and help me develop as a professional.
-
-Thank you for considering my application. I look forward to the opportunity to discuss my qualifications further.
-
-Sincerely,
-
-Nicholas Demetrick \vspace{0.5cm} \raggedright \end{document}
+        Date: \today \par \vspace{-0.1cm}'''  + response['choices'][0]['text'] + r''' \vspace{0.5cm} \raggedright \end{document}'''
+    return document
